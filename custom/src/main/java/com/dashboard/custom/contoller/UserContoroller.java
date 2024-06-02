@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
 
+@CrossOrigin(originPatterns = "*")
 @RestController
 @RequestMapping("/user")
 public class UserContoroller {
