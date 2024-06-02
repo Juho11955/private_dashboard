@@ -9,9 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/test")
 public class TestController {
-
-    @Autowired
-    private TestService testService;
+        @Autowired
+        private TestService testService;
     @GetMapping
     public void MapperCallTest(){
         System.out.println("TestController.MapperCallTest");
