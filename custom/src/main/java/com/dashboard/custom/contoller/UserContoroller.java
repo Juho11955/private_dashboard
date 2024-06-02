@@ -15,7 +15,7 @@ public class UserContoroller {
 
     @GetMapping
     public String authCheck() {
-        return "200";
+        return "return yes";
     }
 
     @PostMapping(value = "login", produces = "application/json; charset=utf-8")
