@@ -8,8 +8,8 @@ import java.util.Map;
 
 @CrossOrigin(originPatterns = "*")
 @RestController
-@RequestMapping("/user")
-public class UserContoroller {
+@RequestMapping("/members")
+public class MembersContoroller {
 
     @Autowired
     private TestService testService;
