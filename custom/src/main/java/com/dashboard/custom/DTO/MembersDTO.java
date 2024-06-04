@@ -1,11 +1,13 @@
 package com.dashboard.custom.DTO;
 
 
-import com.dashboard.custom.Enum.MembersEnum;
-
 import java.sql.Date;
 
 public class MembersDTO {
+
+    public enum MembersEnum {
+        ADMIN, USER, VISITOR
+    }
 
     private int memberSeq; // 템플릿 및 설정을 가져오기 위한 회원번호
     private String memberEmail; // ID 겸 이후 구현해볼 email 레터 기능에 사용
