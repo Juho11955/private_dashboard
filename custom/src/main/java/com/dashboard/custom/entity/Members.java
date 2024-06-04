@@ -17,11 +17,10 @@ import java.util.stream.Collectors;
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
 @Builder
-@EqualsAndHashCode(of = "memberSeq")
 
 public class Members implements UserDetails {
-    @Id @GeneratedValue
-    @Column(name = "memberSeq", updatable = false, unique = true, nullable = false)
+    @Id
+    @Column(updatable = false, unique = true, nullable = false)
     private int memberSeq;
 
     @Column(nullable = false)
@@ -44,6 +43,16 @@ public class Members implements UserDetails {
         return this.roles.stream()
                 .map(SimpleGrantedAuthority::new)
                 .collect(Collectors.toList());
+    }
+
+    @Override
+    public String getUsername() {
+        return memberEmail;
+    }
+
+    @Override
+    public String getPassword() {
+        return memberPw;
     }
 
     @Override
