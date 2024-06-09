@@ -18,6 +18,5 @@ public class MembersServiceImpl implements MembersService {
     private final AuthenticationManagerBuilder authenticationManagerBuilder;
     private final JwtTokenProvider jwtTokenProvider;
 
-    @Transactional
 
 }
