@@ -18,8 +18,8 @@ public class CustomUserDetailService implements UserDetailsService {
     private final PasswordEncoder passwordEncoder;
 
     @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        return membersRepository.findByUsername(username)
+    public UserDetails loadUserByUsername(String memberEmail) throws UsernameNotFoundException {
+        return membersRepository.findByUsername(memberEmail)
                 .map(this::createUserDetail)
                 .orElseThrow(() -> new UsernameNotFoundException("해당 유저를 찾을 수 없습니다."));
     }

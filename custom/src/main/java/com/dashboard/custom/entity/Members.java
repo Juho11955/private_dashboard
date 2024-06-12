@@ -21,10 +21,10 @@ import java.util.stream.Collectors;
 public class Members implements UserDetails {
     @Id
     @Column(updatable = false, unique = true, nullable = false)
-    private int memberSeq;
+    private String memberEmail;
 
     @Column(nullable = false)
-    private String memberEmail;
+    private int memberSeq;
 
     @Column(nullable = false)
     private String memberPw;
