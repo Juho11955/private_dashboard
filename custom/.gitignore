@@ -35,3 +35,6 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### intelliJ setting ###
+.idea/workspace.xml
