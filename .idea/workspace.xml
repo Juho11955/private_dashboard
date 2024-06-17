@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a8766f3-0c53-4ebe-826c-6296132da33f" name="Changes" comment="">
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_4_24,_8_08 PM_[Changes]/shelved.patch" beforeDir="false" />
-=======
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/utils/JwtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/utils/JwtUtils.java" afterDir="false" />
->>>>>>> e4729d923cd3be1b9d610d118c7d93bc75beedee
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,11 +93,6 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
-  },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mariadb"
-    ]
   }
 }]]></component>
   <component name="RunManager">
