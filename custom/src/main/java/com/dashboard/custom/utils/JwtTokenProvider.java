@@ -33,7 +33,7 @@ public class JwtTokenProvider {
     private static final long ACCESS_TOKEN_EXPIRE_TIME = 1000 * 60 * 30;            // 30분
     private static final long REFRESH_TOKEN_EXPIRE_TIME = 1000 * 60 * 60 * 24 * 7;  // 7일
 
-    // application에서 secret 값 가져와서 key에 저장
+    // application.properties에서 secret 값 불러와서 저장
     public JwtTokenProvider(@Value("${jwt.secret}") String secretKey) {
         byte[] keyBytes = Decoders.BASE64.decode(secretKey);
         this.key = Keys.hmacShaKeyFor(keyBytes);
@@ -92,13 +92,14 @@ public class JwtTokenProvider {
         return new UsernamePasswordAuthenticationToken(pricipal, "", authorities);
     }
 
+
     // 토큰 정보 검증 메소드
     public boolean validateToken(String token) {
         try {
             Jwts.parserBuilder()
-                .setSigningKey(key)
-                .build()
-                .parseClaimsJws(token);
+                    .setSigningKey(key)
+                    .build()
+                    .parseClaimsJws(token);
             return true;
         } catch (SecurityException | MalformedJwtException e) {
             log.info("유효하지 않은 JWT 토큰입니다", e);

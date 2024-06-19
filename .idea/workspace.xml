@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a8766f3-0c53-4ebe-826c-6296132da33f" name="Changes" comment="Changes" />
+    <list default="true" id="3a8766f3-0c53-4ebe-826c-6296132da33f" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/DTO/LoginDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/service/members/CustomUserDetailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/contoller/MembersContoroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/contoller/MembersContoroller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/filter/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/filter/JwtAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/mapper/MembersMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/mapper/MembersMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/security/CustomUserDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/security/CustomUserDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/service/members/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/service/members/MemberServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/service/members/MembersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/service/members/MembersService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/utils/JwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/utils/JwtTokenProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/utils/JwtUtils.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -110,7 +123,6 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="디폴트 작업">
-      <changelist id="884d8c94-0de7-40c0-ba09-d4c585a606b9" name="변경" comment="" />
       <created>1717369781736</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -119,6 +131,7 @@
       <workItem from="1717370034911" duration="1103000" />
       <workItem from="1717473523793" duration="3054000" />
       <workItem from="1717484076318" duration="3935000" />
+      <workItem from="1718751845317" duration="5967000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <option name="closed" value="true" />

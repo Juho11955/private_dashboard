@@ -2,7 +2,7 @@ package com.dashboard.custom.service.members;
 
 import com.dashboard.custom.DTO.JwtTokenDTO;
 import com.dashboard.custom.mapper.MembersMapper;
-import com.dashboard.custom.utils.JwtUtils;
+import com.dashboard.custom.utils.JwtTokenProvider;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -17,7 +17,7 @@ public class MemberServiceImpl implements MembersService {
 
     private final MembersMapper membersMapper;
     private final AuthenticationManagerBuilder authenticationManagerBuilder;
-    private final JwtUtils jwtUtils;
+    private final JwtTokenProvider jwtTokenProvider;
 
     @Override
     public JwtTokenDTO login(String memberEmail, String memberPw) {
@@ -29,7 +29,7 @@ public class MemberServiceImpl implements MembersService {
         Authentication authentication = authenticationManagerBuilder.getObject().authenticate(authenticationToken);
 
         // 3. 인증 정보를 기반으로 JWT 토큰 생성
-        JwtTokenDTO jwtTokenDTO = jwtUtils.generateToken(authentication);
+        JwtTokenDTO jwtTokenDTO = jwtTokenProvider.generateToken(authentication);
 
         return jwtTokenDTO;
     }
@@ -37,3 +37,4 @@ public class MemberServiceImpl implements MembersService {
 
 
 }
+

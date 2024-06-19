@@ -1,5 +1,6 @@
 package com.dashboard.custom.security;
 
+import com.dashboard.custom.DTO.MembersDTO;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
@@ -8,36 +9,28 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
-@NoArgsConstructor
 @AllArgsConstructor
 public class CustomUserDetail  implements UserDetails {
 
-    public enum MembersEnum {
-        ADMIN, USER, VISITOR
-    }
-
-    private int memberSeq;
-    private String memberEmail;
-    private String memberPw;
-    private String memberName;
-    private MembersEnum memberGrade;
+    private final MembersDTO membersDTO;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        ArrayList<GrantedAuthority> authList = new ArrayList<GrantedAuthority>();
-        authList.add(new SimpleGrantedAuthority(auth));
-        return authList;
+        List<GrantedAuthority> authorities = new ArrayList<GrantedAuthority>();
+        authorities.add(new SimpleGrantedAuthority("ROLE_" + membersDTO.getMemberGrade().toString()));
+        return authorities;
     }
 
     @Override
     public String getPassword() {
-        return memberPw;
+        return membersDTO.getMemberEmail();
     }
 
     @Override
     public String getUsername() {
-        return memberEmail;
+        return membersDTO.getMemberPw();
     }
 
     @Override
