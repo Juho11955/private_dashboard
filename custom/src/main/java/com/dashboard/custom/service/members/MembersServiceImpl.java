@@ -13,7 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 @Transactional(readOnly = true)
 @RequiredArgsConstructor
-public class MemberServiceImpl implements MembersService {
+public class MembersServiceImpl implements MembersService {
 
     private final MembersMapper membersMapper;
     private final AuthenticationManagerBuilder authenticationManagerBuilder;

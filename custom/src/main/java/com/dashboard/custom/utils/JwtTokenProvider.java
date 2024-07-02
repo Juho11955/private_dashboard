@@ -13,6 +13,7 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.security.Key;
 import java.text.SimpleDateFormat;

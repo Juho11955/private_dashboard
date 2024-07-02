@@ -5,18 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a8766f3-0c53-4ebe-826c-6296132da33f" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/DTO/LoginDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/service/members/CustomUserDetailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/custom/src/main/resources/mapper/membersMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/6_14_24,_8_00 AM,_업데이트_전에_커밋되지_않은_변경_내용_[변경]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/6_14_24__8_00AM__________1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_12_24,_8_28 PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_12_24__8_28PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/DTO/LoginDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/DTO/LoginDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/contoller/MembersContoroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/contoller/MembersContoroller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/filter/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/filter/JwtAuthenticationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/mapper/MembersMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/mapper/MembersMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/security/CustomUserDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/security/CustomUserDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/service/members/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/service/members/MemberServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/service/members/MembersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/service/members/MembersService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/service/members/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/service/members/MembersServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/utils/JwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/utils/JwtTokenProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/src/main/java/com/dashboard/custom/utils/JwtUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/custom/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,11 +98,13 @@
     &quot;Spring Boot.CustomApplication.executor&quot;: &quot;Run&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;login&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/orot/workbench/private_dashboard&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/onu/workspace/private_dashboard&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;프로젝트&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
@@ -120,9 +125,18 @@
       </method>
     </configuration>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17890.1" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17890.1" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="3a8766f3-0c53-4ebe-826c-6296132da33f" name="Changes" comment="Changes" />
       <created>1717369781736</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -132,6 +146,9 @@
       <workItem from="1717473523793" duration="3054000" />
       <workItem from="1717484076318" duration="3935000" />
       <workItem from="1718751845317" duration="5967000" />
+      <workItem from="1719184325030" duration="136000" />
+      <workItem from="1719184464761" duration="33567000" />
+      <workItem from="1719895092258" duration="10000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <option name="closed" value="true" />
@@ -146,6 +163,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.security:spring-security-core" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-commons" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.batch:spring-batch-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
+    <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
+    <option featureType="dependencySupport" implementationName="java:javax.batch:javax.batch-api" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

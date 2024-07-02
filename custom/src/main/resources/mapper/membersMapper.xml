@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dashboard.custom.mapper.MembersMapper">
+
+        <resultMap type="com.dashboard.custom.security.CustomUserDetail" id="customUserDetail">
+            <id property="artistSeq" column="artist_seq"/>
+            <result property="exhibitionSeq" column="exhibition_seq" />
+            <result property="artistName" column="artist_name"/>
+            <result property="artistProfile" column="artist_profile"/>
+            <result property="artistSns" column="artist_sns"/>
+            <result property="artistImage" column="artist_image"/>
+            <result property="artistHit" column="artist_hit"/>
+        </resultMap>
+
+    <select id="loginCheck" resultType="customUserDetail">
+        SELECT * FROM MEMBERS WHERE MEMBER_EMAIL=#{username}
+    </select>
+
+</mapper>

@@ -31,7 +31,7 @@ public class MembersContoroller {
         return map;
     }
 
-    @GetMapping(value = "test")
+    @GetMapping(value = "test", produces = "application/json; charset=utf-8")
     public String test() {
         System.out.println("test");
         return "test";

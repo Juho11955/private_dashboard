@@ -5,6 +5,9 @@ public class LoginDTO {
     private String memberEmail;
     private String memberPw;
 
+    public LoginDTO() {
+    }
+
     public LoginDTO(String memberEmail, String memberPw) {
         this.memberEmail = memberEmail;
         this.memberPw = memberPw;
